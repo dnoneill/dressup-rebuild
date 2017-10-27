@@ -17,8 +17,8 @@ title: DResSUP | UCLA Library
 email: zoe@library.ucla.edu
 description: > # this means to ignore newlines until "baseurl:"
   UCLA Library's digital projects incubator for graduate students and librarians.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://dnoneill.github.io/dressup-rebuild/" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/dressup-rebuild" # the subpath of your site, e.g. /blog
+url: "https://dnoneill.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 
 github_username:  dressupucla
 description: "UCLA Library's digital projects incubator for graduate students and librarians."

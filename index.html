@@ -1,0 +1,13 @@
+---
+bg: "code.jpg"
+layout: default
+title: "Digital Research Start-Up Partnerships"
+summary: "  UCLA Library's digital projects incubator for graduate students and librarians."
+---
+<h3> Latest Posts </h3>
+{% for post in site.posts limit: 5 %}
+  <article class="index-page">
+    <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+    {{ post.excerpt }}
+  </article>
+{% endfor %}

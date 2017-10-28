@@ -30,11 +30,11 @@ plugins:
 collections:
   people:
     title: People
-    #output: true
+    output: true
     permalink: /:name
   sessions:
     title: Sessions
-    #output: true
+    output: true
     permalink: /participants/:name
 
 future: true

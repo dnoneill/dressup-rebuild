@@ -60,11 +60,11 @@ collections:
   people:
     title: People
     output: true
-    permalink: /people/:name
+    permalink: /dressup-rebuild/people/:name
   sessions:
     title: Sessions
     output: true
-    permalink: /participants/:name
+    permalink: /dressup-rebuild/participants/:name
 
 # defaults:
 #   - scope:

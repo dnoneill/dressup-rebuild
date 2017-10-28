@@ -6,7 +6,12 @@ crawlertitle: "All articles"
 summary: "Posts about jekyll"
 active: archive
 ---
-
+{% for post in site.posts %}
+  <article class="index-page">
+    <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+    {{ post.excerpt }}
+  </article>
+{% endfor %}
 {% for tag in site.tags %}
   {% assign t = tag | first %}
   {% assign posts = tag | last %}

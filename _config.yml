@@ -60,7 +60,7 @@ collections:
   people:
     title: People
     output: true
-    permalink: :base-url/:name
+    permalink: /:base-url/:name
   sessions:
     title: Sessions
     output: true

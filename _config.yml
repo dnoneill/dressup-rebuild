@@ -29,9 +29,9 @@ plugins:
 
 collections:
   people:
-    title: People
+    title: Participants
     output: true
-    permalink: /:slug
+    permalink: /participants/:slug
   sessions:
     title: Sessions
     output: true

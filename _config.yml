@@ -27,6 +27,16 @@ markdown: kramdown
 plugins:
   - jekyll-feed
 
+collections:
+  people:
+    title: People
+    output: true
+    permalink: /:slug
+  sessions:
+    title: Sessions
+    output: true
+    permalink: /dressup-rebuild/participants/:name
+
 future: true
 safe: false
 lsi: false
@@ -56,15 +66,6 @@ images: '/images'
 #   - vendor/gems/
 #   - vendor/ruby/
 
-collections:
-  people:
-    title: People
-    output: true
-    permalink: /dressup-rebuild/:slug
-  sessions:
-    title: Sessions
-    output: true
-    permalink: /dressup-rebuild/participants/:name
 
 # defaults:
 #   - scope:

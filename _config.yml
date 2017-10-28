@@ -29,13 +29,13 @@ plugins:
 
 collections:
   people:
-    title: Participants
+    title: People
     output: true
-    permalink: /participants/:slug
+    permalink: /people/:name
   sessions:
     title: Sessions
     output: true
-    permalink: /dressup-rebuild/participants/:name
+    permalink: /participants/:name
 
 future: true
 safe: false

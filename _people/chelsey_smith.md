@@ -6,5 +6,6 @@ picture: chelsey_smith2
 twitter: ProfeCSmith
 github: 
 email: profecsmith@ucla.edu
-role: instructor
+role: participant
+session: summer-17
 ---

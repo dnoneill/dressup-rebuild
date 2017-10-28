@@ -8,5 +8,5 @@ github:
 email: profecsmith@ucla.edu
 role: participant
 session: summer-17
-permalink: /dressup-rebuild/people/chelsy-smith
+permalink: /people/chelsy-smith
 ---

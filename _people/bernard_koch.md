@@ -8,5 +8,6 @@ github: kochbj
 email:
 role: participant
 session: summer-17
+permalink: /people/bernard-koch
 ---
 This is a test.

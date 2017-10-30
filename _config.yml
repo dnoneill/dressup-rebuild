@@ -28,10 +28,14 @@ plugins:
   - jekyll-feed
 
 collections:
-  people:
-    title: People
+  participants:
+    title: Participants
     output: true
-    permalink: /:name
+    permalink: /participants/:name
+  instructors:
+    title: Instructors
+    output: true
+    permalink: /instructors/:name
   sessions:
     title: Sessions
     output: true

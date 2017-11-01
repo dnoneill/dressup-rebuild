@@ -3,9 +3,6 @@ layout: default
 ---
 
 <h2>Instructors</h2>
-{% for class in site.sessions %}
-<div><a href="{{site.baseurl}}{{ class.url }}" class="button">{{ class.title }}</a></div><br>
-{% endfor %}
     {% for person in site.people %}
     {% if person.role == "instructor" %}
     <div class="content">

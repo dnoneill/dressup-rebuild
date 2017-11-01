@@ -1,10 +1,10 @@
 ---
 layout: page
 permalink: /posts/
-title: "Archive"
-crawlertitle: "All articles"
-summary: "Posts about jekyll"
-active: archive
+title: "Blog"
+crawlertitle: "All blog posts"
+summary: "DResSUP Blog "
+active: blog
 ---
 {% for post in site.posts %}
   <article class="index-page">

@@ -31,8 +31,7 @@ layout: default
               <ul>
                 {% for post in site.posts %}
                 {% if post.author == person.display_name %}
-                <h5>Latest Posts</h5>
-                <li><h6><a href="{{ post.url }}">{{ post.title }}</a></h6></li>
+                <h6><i class="fa fa-newspaper-o" aria-hidden="true"></i> <a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></h6>
                 {% endif %}
                 {% endfor %}
              </div>

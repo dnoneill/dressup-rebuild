@@ -447,9 +447,18 @@ article a.btn {
 }
 
 .img-circle {
+    -moz-object-fit: cover;
+    -webkit-object-fit: cover;
+    -ms-object-fit: cover;
+    object-fit: cover;
+    -moz-object-position: center;
+    -webkit-object-position: center;
+    -ms-object-position: center;
+    object-position: center;
+    display: block;
+    width: 100%;
+    height: 100%;
     border-radius: 100%;
-    width: 180px;
-    height: 180px;
 }
 
 a img {
@@ -1226,5 +1235,49 @@ article img {
 .il {
     color: #2aa198
 }
+
+
+.row > * {
+    float: left;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.button {
+    display: inline-block;
+    font-weight: 400;
+    letter-spacing: 0.125em;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap;
+    font-size: 0.75rem;
+    max-width: 20rem;
+    height: 3.75em;
+    line-height: 3.75em;
+    border-radius: 3.75em;
+    padding: 0 2.5em;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+   
+    input[type="submit"],
+    input[type="reset"],
+    input[type="button"],
+    button,
+    .button {
+        background-color: transparent;
+        box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
+        color: #000000 !important;
+    }
+    input[type="submit"]:hover,
+    input[type="reset"]:hover,
+    input[type="button"]:hover,
+    button:hover,
+    .button:hover {
+        box-shadow: inset 0 0 0 1px #47D3E5;
+        color: #47D3E5 !important;
+    }
 
 

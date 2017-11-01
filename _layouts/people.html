@@ -12,15 +12,13 @@ layout: default
 
     <section class="spotlight style2 orient-left content-orient-left">
         <div class="content">
-            {{ content }}<br>
-            <ul>
+            {{ content }}<br><br>
 
-                {% for post in site.posts %}
-                    {% if post.author == page.display_name %}
-                    <h4><i class="fa fa-newspaper-o" aria-hidden="true"></i> <a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></h4>
-                    {% endif %}
-                {% endfor %}
-            </ul>
+            {% for post in site.posts %}
+                {% if post.author == page.display_name %}
+                <h4><i class="fa fa-newspaper-o" aria-hidden="true"></i> <a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></h4>
+                {% endif %}
+            {% endfor %}
         </div>
     </section>
 

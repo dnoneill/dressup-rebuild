@@ -2,7 +2,7 @@
 layout: people
 display_name: Dawn Childress
 title: Librarian, Digital Collections & Scholarship
-picture: 
+picture: autre_monde
 description: "Dawn is interested in digital libraries and collections as data; digital and analog approaches to bibliography & book history; digital scholarly editing; and translation."
 twitter: kirschbombe
 github: kirschbombe

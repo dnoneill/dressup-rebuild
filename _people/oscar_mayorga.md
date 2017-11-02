@@ -3,6 +3,8 @@ layout: people
 display_name: Oscar J. Mayorga
 title: Ph.D.student in Sociology
 picture: OJMHeadshot
+description: Oscar J. Mayorga was born in Nicaragua and raised in Miami FL. He has worked in various capacities in higher education institutions for the last 15 years in the Northeast, where he was the Director of a Cross-Cultural Center and Chief Diversity Officer.
+project:
 twitter: N/A
 github: omayorga
 email: omayorga at ucla dot edu

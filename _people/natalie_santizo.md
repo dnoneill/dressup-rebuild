@@ -1,8 +1,10 @@
 ---
 layout: people
 display_name: Natalie Santizo
-title: Mapping 1920's Baldwin Park
+title: Ph.D student in the Chicana/o Studies
 picture: Natalie
+description: Natalie explores the relationship between identity, race, and ethnicity through a food studies lens. Natalie is particularly interested in analyzing the role of food spaces and pathways in developing conceptions of identity, race and ethnicity in the San Gabriel Valley of Southern California.
+project: Mapping Foodways in the San Gabriel Valley
 twitter:
 github: nataliesantizo
 email: nsantizo@g.ucla.edu

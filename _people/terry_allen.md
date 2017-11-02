@@ -1,11 +1,13 @@
 ---
 layout: people
 display_name: Terry Allen
-title: Dressup Participant
-picture: 
-twitter: 
-github: 
-email: 
+title: Ph.D. student in Urban Schooling
+picture:
+description: Originally from San Francisco Bay Area, Terry has two lines of research. The first line of research concerns the historical origins of racial and gender inequality in the juvenile justice and education systems in the United States, and the second involves stereotypicality and the experiences of Black girls in discipline contexts.
+project: Early-twentieth century history of convict leasing, educational progress, and juvenile incarceration among Black adolescents in the state of Georgia
+twitter:
+github:
+email:
 role: participant
 session: summer-17
 ---

@@ -2,8 +2,10 @@
 layout: people
 display_name: Bernard Koch
 title: Sociology Phd student
-picture: 
-twitter: 
+picture:
+description: Bernard is a second-year sociology student with a background in evolutionary biology and bioinformatics. He is interested in the sociology of science, culture, and social science genomics.
+project: Sub-genres of metal music and themes in Danish folklore
+twitter:
 github: kochbj
 email:
 role: participant

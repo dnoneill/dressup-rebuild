@@ -27,7 +27,7 @@ markdown: kramdown
 plugins:
   - jekyll-feed
 
-current-session: spring-17
+current-session: summer-17
 
 collections:
   people:

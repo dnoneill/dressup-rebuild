@@ -7,7 +7,7 @@ twitter:  [twitter username, leave blank if none]
 github: [github username, leave blank if none]
 email: [email]
 role: participant
-session: [session i.e fall-2017]
+session: [session i.e fall-17]
 ---
 ## Biography
 

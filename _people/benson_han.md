@@ -6,7 +6,7 @@ picture: benson_han
 twitter: bensonjaminhan
 github: bensonhan
 email: bensonjaminhan@gmail.com
-role: participant
+role: assistant
 session:
 ---
 

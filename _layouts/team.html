@@ -2,18 +2,18 @@
 layout: default
 ---
 
-<h2>The Team</h2>
+<h2>Core Team</h2>
     {% for person in site.people %}
     {% if person.role == "instructor" %}
     <div class="content">
         <div class="row">
-            <div class="col-xs-3 col-sm-4 col-md-4 col-lg-4 col-xl-4" style="width: 18rem; height: 18rem;">
+            <!-- <div class="col-xs-3 col-sm-4 col-md-4 col-lg-4 col-xl-4" style="width: 18rem; height: 18rem;">
                 {% if person.picture %}
                  <img class="img-circle" src="{{ site.baseurl }}/images/{{ person.picture }}.jpg" align="left">
                 {% else %}
                 <img class="img-circle" src="{{ site.baseurl }}/images/beatnik.jpg" align="left">
                 {% endif %}
-            </div>
+            </div> -->
             <div class="col-xs-7 col-sm-8 col-md-8 col-lg-9 col-xl-10">
                 <h3><a href="{{ site.baseurl }}{{ person.url }}">{{ person.display_name }}</a>
                  {% if person.twitter %}
@@ -35,9 +35,51 @@ layout: default
              </div>
         </div>
     </div>
+
        <!-- {% if person.blurb %}
                     <p class="blurb">{{ person.blurb }}</p>
                     {% endif %} -->
 
     {% endif %}
     {% endfor %}
+
+    <h2>Assistants</h2>
+        {% for person in site.people %}
+        {% if person.role == "assistant" %}
+        <div class="content">
+            <div class="row">
+                <div class="col-xs-3 col-sm-4 col-md-4 col-lg-4 col-xl-4" style="width: 18rem; height: 18rem;">
+                    {% if person.picture %}
+                     <img class="img-circle" src="{{ site.baseurl }}/images/{{ person.picture }}.jpg" align="left">
+                    {% else %}
+                    <img class="img-circle" src="{{ site.baseurl }}/images/beatnik.jpg" align="left">
+                    {% endif %}
+                </div>
+                <div class="col-xs-7 col-sm-8 col-md-8 col-lg-9 col-xl-10">
+                    <h3><a href="{{ site.baseurl }}{{ person.url }}">{{ person.display_name }}</a>
+                     {% if person.twitter %}
+                    <a href="https://twitter.com/{{ person.twitter }}" target="_blank"><i class="fa fa-twitter"></i></a>
+                    {% endif %}
+                    {% if person.github %}
+                    <a href="https://github.com/{{ person.github }}" target="_blank"><i class="fa fa-github"></i></a>
+                    {% endif %}
+                    {% if person.email %}
+                    <a href="mailto:{{ person.email }}"><i class="fa fa-envelope"></i></a>
+                    {% endif %} </h3>
+                    <h4>{{person.title}}</h4>
+                    <p>{{person.description}}</p>
+                    {% for post in site.posts %}
+                    {% if post.author == person.display_name %}
+                    <h6><i class="fa fa-newspaper-o" aria-hidden="true"></i> <a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></h6>
+                    {% endif %}
+                    {% endfor %}
+                 </div>
+            </div>
+        </div>
+
+           <!-- {% if person.blurb %}
+                        <p class="blurb">{{ person.blurb }}</p>
+                        {% endif %} -->
+
+        {% endif %}
+        {% endfor %}

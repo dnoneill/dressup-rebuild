@@ -17,4 +17,4 @@ session: summer-17
 <p>Outside of academia, Terry serves as a Director of People Strategy and Operations at FOREFRONT, a nonprofit that focuses on innovative, long-term sustainability projects for undeveloped communities.</p>
 
 <h2>Project Description</h2>
-<p>Terry’s DResSUP project will examine the early-twentieth century history of convict leasing, educational progress, and juvenile incarceration among Black adolescents in the state of Georgia.</p>
+<p>Terry's DResSUP project will examine the early-twentieth century history of convict leasing, educational progress, and juvenile incarceration among Black adolescents in the state of Georgia.</p>

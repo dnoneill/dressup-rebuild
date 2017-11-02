@@ -5,7 +5,7 @@ layout: default
 {% if page.session %}
     {% assign class = page.session %}
 {% else %}
-    {% assign class = "summer-17" %}
+    {% assign class = site.current-session %}
 {% endif %}
 
 <h2>Participants</h2>
@@ -22,7 +22,7 @@ layout: default
                 {% else %}
                 <img class="img-circle" src="{{ site.baseurl }}/images/beatnik.jpg" align="left">
                 {% endif %}
-            </div>  
+            </div>
             <div class="col-xs-7 col-sm-8 col-md-8 col-lg-9 col-xl-10">
                 <h3><a href="{{ site.baseurl }}{{ person.url }}">{{ person.display_name }}</a>
                  {% if person.twitter %}

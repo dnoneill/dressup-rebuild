@@ -3,7 +3,7 @@ layout: page
 permalink: /posts/
 title: "Blog"
 crawlertitle: "All blog posts"
-summary: "DResSUP Blog "
+summary: "DResSUP Blog"
 active: blog
 ---
 {% for post in site.posts %}

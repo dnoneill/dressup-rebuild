@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<h2>Instructors</h2>
+<h2>The Team</h2>
     {% for person in site.people %}
     {% if person.role == "instructor" %}
     <div class="content">
@@ -11,9 +11,9 @@ layout: default
                 {% if person.picture %}
                  <img class="img-circle" src="{{ site.baseurl }}/images/{{ person.picture }}.jpg" align="left">
                 {% else %}
-                <img class="img-circle" src="{{ site.baseurl }}/images/colors.jpg" align="left">
+                <img class="img-circle" src="{{ site.baseurl }}/images/beatnik.jpg" align="left">
                 {% endif %}
-            </div>  
+            </div>
             <div class="col-xs-7 col-sm-8 col-md-8 col-lg-9 col-xl-10">
                 <h3><a href="{{ site.baseurl }}{{ person.url }}">{{ person.display_name }}</a>
                  {% if person.twitter %}
@@ -41,5 +41,3 @@ layout: default
 
     {% endif %}
     {% endfor %}
-
-

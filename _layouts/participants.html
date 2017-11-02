@@ -5,7 +5,7 @@ layout: default
 {% if page.session %}
     {% assign class = page.session %}
 {% else %}
-    {% assign class = "all" %}
+    {% assign class = "summer-17" %}
 {% endif %}
 
 <h2>Participants</h2>
@@ -13,7 +13,7 @@ layout: default
 <div><a href="{{site.baseurl}}{{ class.url }}" class="button">{{ class.title }}</a></div><br>
 {% endfor %}
     {% for person in site.people %}
-    {% if person.role == "participant" and person.session == class or class == "all" %}
+    {% if person.role == "participant" and person.session == class %}
     <div class="content">
         <div class="row">
             <div class="col-xs-3 col-sm-4 col-md-4 col-lg-4 col-xl-4" style="width: 18rem; height: 18rem;">

@@ -617,9 +617,20 @@ a:hover, a:focus, a:active {
     color: #fff;
     text-shadow: 2px 0 5px #333;
     position: absolute;
-    bottom: 20%;
+    bottom: 34%;
     width: 80%;
     left: 10%
+}
+.footer {
+    color: #fff;
+    text-shadow: 2px 0 5px #333;
+    position: absolute;
+    bottom: 0%;
+    width: 80%;
+    left: 10%
+}
+.footer a{
+    color: #fff;
 }
 
 .cover-text .heading a {

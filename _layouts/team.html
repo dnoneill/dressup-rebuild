@@ -39,9 +39,12 @@ layout: default
     </div>
     {% endif %}
     {% endfor %}
-    <h2 id="alumni-header">{{page.title}} Alumni</h2>
+    <h2 id="alumni-header"></h2>
     {% for person in site.people %}
     {% if person.role == status and person.status == 'alumni' %}
+    <script>
+    document.getElementById("alumni-header").innerHTML = "{{page.display_name}} Alumni";
+    </script>
     <div class="content">
         <div class="row">
             <div class="col-xs-3 col-sm-4 col-md-4 col-lg-4 col-xl-4" style="width: 18rem; height: 18rem;">
@@ -70,7 +73,12 @@ layout: default
 
     {% endif %}
     {% endfor %}
-
+    <script>
+    function header() {
+        alert(document.getElementById("alumni-header"))
+    document.getElementById("alumni-header").innerHTML = "{{page.title}} Alumni"
+    }
+</script>
     
 
 

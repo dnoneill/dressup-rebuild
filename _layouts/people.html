@@ -13,9 +13,12 @@ layout: default
     <section class="spotlight style2 orient-left content-orient-left">
         <div class="content">
             {{ content }}<br><br>
-
+            <h3 id="posts-header"></h3>
             {% for post in site.posts %}
                 {% if post.author == page.display_name %}
+                <script>
+                document.getElementById("posts-header").innerHTML = "<u>Blog Posts</u>";
+                </script>
                 <h4><i class="fa fa-newspaper-o" aria-hidden="true"></i> <a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></h4>
                 {% endif %}
             {% endfor %}

@@ -27,11 +27,6 @@ layout: default
                 {% endif %} </h3>
                 <h4>{{person.title}}</h4>
                 <p>{{person.description}}</p>
-                {% for post in site.posts %}
-                {% if post.author == person.display_name %}
-                <h6><i class="fa fa-newspaper-o" aria-hidden="true"></i> <a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></h6>
-                {% endif %}
-                {% endfor %}
              </div>
         </div>
     </div>

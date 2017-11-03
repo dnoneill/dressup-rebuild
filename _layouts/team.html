@@ -1,10 +1,17 @@
 ---
 layout: default
 ---
+{% if page.teamstatus %}
+    {% assign status = page.teamstatus %}
+{% endif %}
 
-<h2>Core Team</h2>
+{% for status in site.teamstatus %}
+<a href="{{site.baseurl}}{{ status.url }}" class="button">{{ status.title }}</a>
+{% endfor %}
+{% if page.teamstatus != 'alumni' %}<h2>Core Team</h2>{% endif %}
+{% if page.teamstatus == 'alumni' %}<h2>Past Team Members</h2>{% endif %}
     {% for person in site.people %}
-    {% if person.role == "instructor" %}
+    {% if person.role == "instructor" and person.status == status %}
     <div class="content">
         <div class="row">
             <div class="col-xs-3 col-sm-4 col-md-4 col-lg-4 col-xl-4" style="width: 18rem; height: 18rem;">
@@ -38,9 +45,11 @@ layout: default
     {% endif %}
     {% endfor %}
 
-    <h2>Assistants</h2>
+    {{site.people.status}}
+
+    {% if page.teamstatus != 'alumni' %}<h2>Assistants</h2>{% endif %}
         {% for person in site.people %}
-        {% if person.role == "assistant" %}
+        {% if person.role == "assistant" and person.status == status%}
         <div class="content">
             <div class="row">
                 <div class="col-xs-3 col-sm-4 col-md-4 col-lg-4 col-xl-4" style="width: 18rem; height: 18rem;">

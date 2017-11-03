@@ -38,6 +38,10 @@ collections:
     title: Sessions
     output: true
     permalink: /participants/:name
+  teamstatus:
+    title: Team Status
+    output: true
+    permalink: /team/:name
 
 future: true
 safe: false

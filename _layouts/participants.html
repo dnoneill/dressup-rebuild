@@ -36,8 +36,10 @@ layout: default
                 {% endif %} </h3>
                 <h4>{{person.title}}</h4>
                 <p>{{person.description}}</p>
+                {% assign postsPerPage = 2 %}
                 {% for post in site.posts %}
-                {% if post.author == person.display_name %}
+                {% if post.author == person.display_name and postsPerPage > 0%}
+                {% assign postsPerPage = postsPerPage | minus: 1 %}
                 <h6><i class="fa fa-newspaper-o" aria-hidden="true"></i> <a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></h6>
                 {% endif %}
                 {% endfor %}

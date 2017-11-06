@@ -1,10 +1,10 @@
 ---
 layout: page
 permalink: /posts/
-title: "Blog"
-crawlertitle: "All blog posts"
-summary: "DResSUP Blog"
-active: blog
+title: "News"
+crawlertitle: "Latest DResSUP News and Announcements"
+summary: "Latest DResSUP News and Announcements"
+active: news
 ---
 {% for post in site.posts %}
   <article class="index-page">

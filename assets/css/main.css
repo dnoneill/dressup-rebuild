@@ -318,15 +318,6 @@ table tr:nth-child(even) {
     background: #f9f9f9
 }
 
-.toolsandskills table tr:nth-child(even) {
-    background: #fff
-}
-
-.toolsandskills table tr:nth-child(odd) {
-    font-size: 20px;
-    font-weight: bold;
-}
-
 table th {
     background: #f5f5f5;
     font-family: sans-serif
@@ -338,11 +329,6 @@ th, td {
     border: 1px solid #efefef
 }
 
-.toolsandskills th, td {
-    text-align: left;
-    padding: .313em .625em;
-    border: 0px;
-}
 
 table caption {
     padding: .3em;

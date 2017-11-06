@@ -1,19 +1,14 @@
 ---
 bg: "code.jpg"
 layout: page
-title: "About"
-permalink: /about/
-summary: "About UCLA Dressup"
-active: about
+title: "Tools and Skills"
+permalink: /toolsandskills/
+summary: "Tools and Skills learned with UCLA Dressup"
+active: toolsandskills
 ---
 
-## About DResSUP
-
-Increasingly, humanities scholars (and scholars in humanistic social sciences) recognize the value of digital research tools and methods such as text-mining and spatial analysis. As more content is digitized these methods are becoming more useful, especially to graduate students who are at a formative stage in their careers. However, even if these researchers assemble a collection of digitized resources, these resources may not be in a format that is conducive to digital methods. To address these needs, the UCLA Library has established Digital Research Start-Up Partnerships (DResSUP) to introduce graduate students to the tools and methods central to current digital research practices. Embracing a project-based approach with an emphasis on workflow, process, and prototyping, students are taught how to realize their projects through their own work in an "incubator" environment alongside a cohort of their graduate student peers and with guidance from instructors. Have questions? <a href="mailto:zoe@library.ucla.edu">Email us!</a>
-
-## Tools & skills covered 
+## Tools & skills covered
 Project-based, process-oriented: DResSUP staff structure the workshops around the projects that graduate students propose.  Rather than doing projects for you, we train you on tools and methods that will bring your project and skills to the next stage.
-
 
 | <i class="fa fa-diamond"></i> Project management & organization | <i class="fa fa-code"></i> Collecting & creating data |
 | Platforms such as Open Science Framework and Git/GitHub to manage workflow, store and organize project files, code, as well as communications and output. | Capture structured data from the world ?wild? web using web-scraping and indexing tools and techniques, or creating your own data through markup, description, etc. |

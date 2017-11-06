@@ -1,17 +1,20 @@
 ---
 layout: default
 ---
-
+{% assign sorted = site.sessions | sort: 'date' | reverse %}
 {% if page.session %}
     {% assign class = page.session %}
 {% else %}
-    {% assign class = site.current-session %}
+    {% assign class = sorted[0].session %}
 {% endif %}
 
-<h2>Participants</h2>
-{% for class in site.sessions %}
+
+{% if page.title != "Participants" %}<h2>{{page.title}} Participants</h2>
+{% else %}<h2>{{sorted[0].title}} Participants</h2>{% endif %}
+{% for class in sorted %}
 <a href="{{site.baseurl}}{{ class.url }}" class="button">{{ class.title }}</a>
 {% endfor %}
+    <br><br>
     {% for person in site.people %}
     {% if person.role == "participant" and person.session == class %}
     <div class="content">

@@ -1,7 +1,7 @@
 ---
 layout: people
-display_name: John Smith
-title: Digital Humanities Student
+display_name: Allison
+title: ""
 picture:
 twitter:
 github:

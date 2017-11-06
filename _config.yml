@@ -27,8 +27,6 @@ markdown: kramdown
 plugins:
   - jekyll-feed
 
-current-session: summer-17
-
 collections:
   people:
     title: People

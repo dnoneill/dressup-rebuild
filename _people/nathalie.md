@@ -1,7 +1,7 @@
 ---
 layout: people
-display_name: Jane Smith
-title: Ph.D. Student in Sociology
+display_name: Nathalie
+title: ""
 picture:
 twitter:
 github:

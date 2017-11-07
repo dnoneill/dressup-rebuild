@@ -7,7 +7,8 @@ layout: default
     {% assign status = 'instructor' %}
 {% endif %}
 
-    <h2>{{page.title}}</h2>
+    {% if page.title == "The Team" %}<h2>Core Team</h2>
+    {% else %}<h2>{{page.title}}</h2>{% endif %}
     {% for status in site.teamstatus %}
     <a href="{{site.baseurl}}{{ status.url }}" class="button">{{ status.title }}</a>
     {% endfor %}
@@ -48,7 +49,8 @@ layout: default
     {% for person in site.people %}
     {% if person.role == status and person.status == 'alumni' %}
     <script>
-    document.getElementById("alumni-header").innerHTML = "{{page.display_name}} Alumni";
+    {% if page.title == "The Team" %}document.getElementById("alumni-header").innerHTML = "Core Team Alumni"
+    {% else %}document.getElementById("alumni-header").innerHTML = "{{page.title}} Alumni";{% endif %}
     </script>
     <div class="content">
         <div class="row">

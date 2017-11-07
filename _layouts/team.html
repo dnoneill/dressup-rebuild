@@ -46,7 +46,8 @@ layout: default
     {% endif %}
     {% endfor %}
     <h2 id="alumni-header"></h2>
-    {% for person in site.people %}
+    {% assign alumnisort = site.people | sort: 'date' | reverse %}
+    {% for person in alumnisort %}
     {% if person.role == status and person.status == 'alumni' %}
     <script>
     {% if page.title == "The Team" %}document.getElementById("alumni-header").innerHTML = "Core Team Alumni"
@@ -73,7 +74,7 @@ layout: default
                 <a href="mailto:{{ person.email }}"><i class="fa fa-envelope"></i></a>
                 {% endif %} </h3>
                 <h4>{{person.title}}</h4>
-                {% if person.session %}<a href="{{site.baseurl}}/alumni/{{person.session}}" class="button">{{person.session}}</a>{% endif %}
+                {% if person.session %}<b>Session: {{person.session}}</b>{% endif %}
                 <p>{{person.description}}</p>
              </div>
         </div>

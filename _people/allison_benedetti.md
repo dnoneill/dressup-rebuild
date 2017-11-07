@@ -6,6 +6,7 @@ picture: canopus2
 twitter:
 github:
 email: abenedetti@library.ucla.edu
+website:
 role: participant
 session: spring-17
 ---

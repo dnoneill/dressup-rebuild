@@ -7,7 +7,7 @@ description: "Dawn is interested in digital libraries and collections as data; d
 twitter: kirschbombe
 github: kirschbombe
 email: dchildress@library.ucla.edu
-web: http://dawnchildress.com
+website: http://dawnchildress.com
 role: instructor
 ---
 

@@ -8,6 +8,7 @@ project: Mapping Foodways in the San Gabriel Valley
 twitter:
 github: nataliesantizo
 email: nsantizo@g.ucla.edu
+website: https://nataliesantizo.wordpress.com/about/
 role: participant
 session: summer-17
 ---

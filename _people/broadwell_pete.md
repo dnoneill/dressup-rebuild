@@ -4,10 +4,10 @@ display_name: Pete Broadwell
 title: Academic Projects Developer
 picture: cat_portrait3
 description:
-twitter:
+twitter: PeterBroadwell
 github: broadwell
-email:
-web:
+email: broadwell@library.ucla.edu
+website:
 role: instructor
 ---
 ## Biography

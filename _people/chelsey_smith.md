@@ -8,6 +8,7 @@ project: "Thick-Truthing: Complicating the Archive and Networking State Violence
 twitter: ProfeCSmith
 github:
 email: profecsmith@ucla.edu
+website: https://profechelseysmith.weebly.com
 role: participant
 session: summer-17
 ---

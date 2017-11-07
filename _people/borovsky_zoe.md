@@ -7,7 +7,7 @@ description:
 twitter: zoepster
 github: zoepster
 email: zoe@library.ucla.edu
-web:
+website:
 role: instructor
 ---
 ## Biography

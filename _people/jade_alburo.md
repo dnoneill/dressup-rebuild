@@ -6,6 +6,7 @@ picture: waterlily
 twitter: JadeLibrarian
 github:
 email: jalburo@library.ucla.edu
+website: https://jadelibrarian.wordpress.com
 role: participant
 session: spring-17
 ---

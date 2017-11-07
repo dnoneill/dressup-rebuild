@@ -5,9 +5,9 @@ title: Geospatial Resources Librarian
 picture:
 description:
 twitter: andy_rutkowski
-github: 
+github:
 email: arutkows@usc.edu
-web:
+website:
 role: instructor
 status: alumni
 ---

@@ -3,5 +3,5 @@ layout: team
 title: The Team
 permalink: /team/
 active: team
-display_name: Core Team
+display_name: The Team
 ---

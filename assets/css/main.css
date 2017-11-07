@@ -3,7 +3,10 @@ html {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%
 }
-
+main.content-wrapper{
+    padding-left: 2em;
+    padding-right: 2em;
+}
 body {
     margin: 0
 }
@@ -951,8 +954,6 @@ article img {
 
     main {
         padding-top: 1em;
-        padding-left: 3em;
-        padding-right: 3em;
     }
 
     article h2:first-of-type {

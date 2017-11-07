@@ -1,14 +1,19 @@
 ---
 layout: default
 ---
-{% assign teamsort = site.teamsessions | sort: 'date' | reverse %}
-
-    <h2>{{page.title}} Team Alumni</h2>
-    {% for status in site.teamsessions %}
+{% assign alumnisort = site.people | sort: 'date' | reverse %}
+{% if page.teamstatus %}
+    {% assign status = page.teamstatus %}
+{% else %}
+    {% assign status = 'instructor' %}
+{% endif %}
+    <h2>{{page.title}}</h2>
+    {% for status in site.teamstatus %}
     <a href="{{site.baseurl}}{{ status.url }}" class="button">{{ status.title }}</a>
     {% endfor %}
-    {% for person in site.people %}
-    {% if person.status == 'alumni' and person.session == page.session and person.role != 'participant' %}
+    <br><br>
+    {% for person in alumnisort %}
+    {% if person.status == 'alumni' and person.role != 'participant' and person.role != 'instructor' %}
       <div class="content">
         <div class="row">
             <div class="col-xs-3 col-sm-4 col-md-4 col-lg-4 col-xl-4" style="width: 18rem; height: 18rem;">
@@ -30,6 +35,7 @@ layout: default
                 <a href="mailto:{{ person.email }}"><i class="fa fa-envelope"></i></a>
                 {% endif %} </h3>
                 <h4>{{person.title}}</h4>
+                <b>Session: {{person.session}}</b>
                 <p>{{person.description}}</p>
              </div>
         </div>

@@ -47,7 +47,7 @@ layout: default
     {% endfor %}
     <h2 id="alumni-header"></h2>
     {% for person in site.people %}
-    {% if person.role == status and person.status == 'alumni' %}
+    {% if person.role == status and person.status == 'alumni' and person.role == 'instructor' %}
     <script>
     {% if page.title == "The Team" %}document.getElementById("alumni-header").innerHTML = "Core Team Alumni"
     {% else %}document.getElementById("alumni-header").innerHTML = "{{page.title}} Alumni";{% endif %}

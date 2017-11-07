@@ -946,6 +946,8 @@ article img {
 
     main {
         padding-top: 1em;
+        padding-left: 3em;
+        padding-right: 3em;
     }
 
     article h2:first-of-type {

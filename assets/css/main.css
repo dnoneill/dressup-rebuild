@@ -1259,6 +1259,7 @@ article img {
 
 .button {
     display: inline-block;
+    margin: 5px;
     font-weight: 400;
     letter-spacing: 0.125em;
     text-align: center;

@@ -36,6 +36,10 @@ collections:
     title: Sessions
     output: true
     permalink: /participants/:name
+  teamsessions:
+    title: Team Sessions
+    output: true
+    permalink: /alumni/:name
   teamstatus:
     title: Team Status
     output: true

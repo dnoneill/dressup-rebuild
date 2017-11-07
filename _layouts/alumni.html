@@ -1,22 +1,15 @@
 ---
 layout: default
 ---
-{% assign sorted = site.sessions | sort: 'date' | reverse %}
-{% if page.session %}
-    {% assign class = page.session %}
-{% else %}
-    {% assign class = sorted[0].session %}
-{% endif %}
+{% assign teamsort = site.teamsessions | sort: 'date' | reverse %}
 
-{% if page.title != "Participants" %}<h2>{{page.title}} Participants</h2>
-{% else %}<h2>{{sorted[0].title}} Participants</h2>{% endif %}
-{% for class in sorted %}
-<a href="{{site.baseurl}}{{ class.url }}" class="button">{{ class.title }}</a>
-{% endfor %}
-    <br><br>
+    <h2>{{page.title}} Team Alumni</h2>
+    {% for status in site.teamsessions %}
+    <a href="{{site.baseurl}}{{ status.url }}" class="button">{{ status.title }}</a>
+    {% endfor %}
     {% for person in site.people %}
-    {% if person.role == "participant" and person.session == class %}
-    <div class="content">
+    {% if person.status == 'alumni' and person.session == page.session and person.role != 'participant' %}
+      <div class="content">
         <div class="row">
             <div class="col-xs-3 col-sm-4 col-md-4 col-lg-4 col-xl-4" style="width: 18rem; height: 18rem;">
                 {% if person.picture %}
@@ -38,19 +31,11 @@ layout: default
                 {% endif %} </h3>
                 <h4>{{person.title}}</h4>
                 <p>{{person.description}}</p>
-                {% assign postsPerPage = 2 %}
-                {% for post in site.posts %}
-                {% if post.author == person.display_name and postsPerPage > 0%}
-                {% assign postsPerPage = postsPerPage | minus: 1 %}
-                <h6><i class="fa fa-newspaper-o" aria-hidden="true"></i> <a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></h6>
-                {% endif %}
-                {% endfor %}
              </div>
         </div>
     </div>
-       <!-- {% if person.blurb %}
-                    <p class="blurb">{{ person.blurb }}</p>
-                    {% endif %} -->
 
     {% endif %}
     {% endfor %}
+
+

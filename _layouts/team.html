@@ -68,6 +68,7 @@ layout: default
                 <a href="mailto:{{ person.email }}"><i class="fa fa-envelope"></i></a>
                 {% endif %} </h3>
                 <h4>{{person.title}}</h4>
+                {% if person.session %}<a href="{{site.baseurl}}/alumni/{{person.session}}" class="button">{{person.session}}</a>{% endif %}
                 <p>{{person.description}}</p>
              </div>
         </div>
@@ -76,12 +77,6 @@ layout: default
     {% endif %}
     {% endfor %}
     <script>
-    function header() {
-        alert(document.getElementById("alumni-header"))
-    document.getElementById("alumni-header").innerHTML = "{{page.title}} Alumni"
-    }
-</script>
-
 
 
 

@@ -533,7 +533,10 @@ a:hover, a:focus, a:active {
 @media only screen and (max-width: 639px) {
     main {
         padding-top: 4.5em;
-        padding-right: 1em;
+        padding-right: .5em;
+    }
+    body {
+        color: blue;
     }
 }
 

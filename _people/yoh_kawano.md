@@ -2,7 +2,7 @@
 layout: people
 display_name: Yoh Kawano
 title: Campus GIS Coordinator at the Institute for Digital Research and Education
-picture: 
+picture: autre_monde
 twitter:
 github: 
 email: yohman@ucla.edu

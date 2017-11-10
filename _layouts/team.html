@@ -45,9 +45,8 @@ layout: default
     </div>
     {% endif %}
     {% endfor %}
-    {{site.custom_sort}}
-    <h2 id="alumni-header"></h2>
-    {% assign alumnisort = site.people | sort: 'session' | reverse %}
+   {% if page.title != 'Guest Instructors' and page.title != 'Assistants' %} <h2 id="alumni-header"></h2> {% endif %}
+    {% assign alumnisort = site.people | sort: 'date' | reverse %}
     {% for person in alumnisort %}
     {% if person.role == status and person.status == 'alumni' or person.role != 'instructor' %}
     <script>

@@ -5,7 +5,7 @@ title: Director of the UCLA Center for Oral History Research
 picture: 
 twitter:
 github: 
-email:
+email: tbarnett@library.ucla.edu
 website:
 role: guest-instructor
 session: Summer 2017

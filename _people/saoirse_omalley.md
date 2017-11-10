@@ -10,5 +10,4 @@ website:
 role: assistant
 session: Spring 2017
 date: 2017-04-01
-status: alumni
 ---

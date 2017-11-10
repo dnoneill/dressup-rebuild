@@ -14,7 +14,7 @@ layout: default
     {% endfor %}
     <br><br>
     {% for person in site.people %}
-    {% if person.role == status and person.status != 'alumni' %}
+    {% if person.role == status and person.status != 'alumni' and person.role == 'instructor' %}
     <div class="content">
         <div class="row">
             <div class="col-xs-2 col-sm-4 col-md-4 col-lg-4 col-xl-4" style="width: 16rem; height: 16rem;">
@@ -45,14 +45,14 @@ layout: default
     </div>
     {% endif %}
     {% endfor %}
-    <br>
+    {{site.custom_sort}}
     <h2 id="alumni-header"></h2>
-    {% assign alumnisort = site.people | sort: 'date' | reverse %}
+    {% assign alumnisort = site.people | sort: 'session' | reverse %}
     {% for person in alumnisort %}
-    {% if person.role == status and person.status == 'alumni' %}
+    {% if person.role == status and person.status == 'alumni' or person.role != 'instructor' %}
     <script>
-    {% if page.title == "The Team" %}document.getElementById("alumni-header").innerHTML = "Core Team Alumni"
-    {% else %}document.getElementById("alumni-header").innerHTML = "{{page.title}} Alumni";{% endif %}
+    {% if page.title == "The Team" %}document.getElementById("alumni-header").innerHTML = "<br>Core Team Alumni"
+    {% elsif page.title == 'Core Team' %}document.getElementById("alumni-header").innerHTML = "<br>{{page.title}} Alumni";{% endif %}
     </script>
     <div class="content">
         <div class="row">

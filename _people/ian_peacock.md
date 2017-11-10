@@ -8,5 +8,6 @@ github: ipeacock
 email: ipeacock@ucla.edu
 website:
 role: assistant
-session: summer-17
+session: Summer 2017
+date: 2017-06-01
 ---

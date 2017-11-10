@@ -8,7 +8,8 @@ github: bensonhan
 email: bensonjaminhan@gmail.com
 website:
 role: assistant
-session:
+session: Summer 2017
+date: 2017-06-01
 ---
 
 ## Biography
